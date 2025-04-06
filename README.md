@@ -2,6 +2,7 @@
 
 Agentic Observability is a Streamlit-based application that integrates with JIRA and Datadog to fetch data, process it using OpenAI's API(or meta ai API or other), and provide actionable insights via a chatbot interface.
 
+![](./img/agenticObservability-Local-test-agenticObse-arch-diagram.drawio.png)
 ---
 
 ## Installation
@@ -83,7 +84,13 @@ Agentic Observability is a Streamlit-based application that integrates with JIRA
    ```
    http://localhost:8502
    ```
-
+- Prompt test example:
+  ```
+  Show Unauthorized SSH login from datadog.
+  ```
+  ```
+  Show high-priority Jira tickets.
+  ```
 ---
 
 ### Step 3: Transition to Real APIs (Optional)
@@ -93,6 +100,7 @@ Agentic Observability is a Streamlit-based application that integrates with JIRA
 > - [`app/jira_service.py`](app/jira_service.py)
 > - [`app/datadog_service.py`](app/datadog_service.py)
 > - [`app/ollama_agent.py`](app/ollama_agent.py)
+> - [`ui/streamlit_chat.py`](ui/streamlit_chat.py)
 
 
 Once you have tested the application with fake data, you can configure it to use real APIs for JIRA and Datadog.
