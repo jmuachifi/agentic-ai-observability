@@ -88,6 +88,13 @@ Agentic Observability is a Streamlit-based application that integrates with JIRA
 
 ### Step 3: Transition to Real APIs (Optional)
 
+> **Important Note**:  
+> To test with real APIs, you need to **comment out the code for fake data** and **uncomment the code for real API calls** in the following files:
+> - [`app/jira_service.py`](app/jira_service.py)
+> - [`app/datadog_service.py`](app/datadog_service.py)
+> - [`app/ollama_agent.py`](app/ollama_agent.py)
+
+
 Once you have tested the application with fake data, you can configure it to use real APIs for JIRA and Datadog.
 
 1. **Update the `.env` File**:
