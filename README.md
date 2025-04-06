@@ -183,7 +183,9 @@ Once you have tested the application with fake data, you can configure it to use
    - Ensure the `data` directory and its files (`sample_jira_tickets.json`, `sample_datadog_logs.json`) are present in the project.
 
 ---
+## Author
 
+- **Jodionísio Muachifi** - [GitHub Profile](https://github.com/jmuachifi/)
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
