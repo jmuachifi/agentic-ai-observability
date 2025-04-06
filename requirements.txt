@@ -1,0 +1,7 @@
+openai
+flask
+streamlit
+requests
+python-dotenv
+pandas
+ollama

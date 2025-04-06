@@ -1,0 +1,37 @@
+[
+  {
+    "key": "JIRA-101",
+    "summary": "Database latency issue on CustomerOrdersDB",
+    "status": "Open",
+    "priority": "High",
+    "created": "2024-04-02T10:21:00Z"
+  },
+  {
+    "key": "JIRA-102",
+    "summary": "Checkout API failure during peak traffic",
+    "status": "In Progress",
+    "priority": "Medium",
+    "created": "2024-04-03T14:09:00Z"
+  },
+  {
+    "key": "JIRA-103",
+    "summary": "Intermittent login errors for mobile app",
+    "status": "Resolved",
+    "priority": "Low",
+    "created": "2024-04-01T08:45:00Z"
+  },
+  {
+    "key": "JIRA-104",
+    "summary": "🔐 Security alert: Unauthorized SSH login attempt detected",
+    "status": "Open",
+    "priority": "Critical",
+    "created": "2024-04-04T06:30:00Z"
+  },
+  {
+    "key": "JIRA-105",
+    "summary": "🐳 Container crash loop on payment-service pod",
+    "status": "Open",
+    "priority": "High",
+    "created": "2024-04-04T07:10:00Z"
+  }
+]

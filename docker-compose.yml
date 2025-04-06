@@ -1,0 +1,64 @@
+# version: "3.8"
+
+# services:
+#   chat-ui:
+#     build: .
+#     ports:
+#       - "8501:8501"
+#     env_file:
+#       - .env
+#     volumes:
+#       - .:/app
+#     depends_on:
+#       - ollama
+
+#   ollama:
+#     image: ollama/ollama
+#     ports:
+#       - "11434:11434"
+#     volumes:
+#       - ollama:/root/.ollama
+
+# volumes:
+#   ollama:
+version: "3.8"
+
+services:
+  chat-ui:
+    build: .
+    ports:
+      - "8502:8501"
+    env_file:
+      - .env
+    volumes:
+      - .:/app:cached  # Use cached for better performance in development
+    depends_on:
+      - ollama
+    environment:
+      OLLAMA_MODEL_NAME: "phi3"
+      OLLAMA_HOST: "http://ollama:11434"
+    command: >
+      streamlit run ui/streamlit_chat.py
+      --server.port=8501
+      --server.address=0.0.0.0
+
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "11435:11434"
+    volumes:
+      - ollama:/root/.ollama
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          memory: 6G
+        reservations:
+          memory: 4G
+
+volumes:
+  ollama:

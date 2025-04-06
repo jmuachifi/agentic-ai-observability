@@ -1,0 +1,27 @@
+[
+  {
+    "timestamp": "2024-04-05T09:15:23Z",
+    "message": "ERROR: High latency detected on endpoint /api/checkout",
+    "level": "error"
+  },
+  {
+    "timestamp": "2024-04-05T09:17:51Z",
+    "message": "WARNING: Memory usage on DB pod exceeded 80%",
+    "level": "warning"
+  },
+  {
+    "timestamp": "2024-04-05T09:19:02Z",
+    "message": "ERROR: Failed login attempts exceeded threshold",
+    "level": "error"
+  },
+  {
+    "timestamp": "2024-04-05T09:20:00Z",
+    "message": "CRITICAL: Unauthorized SSH login attempt from IP 92.40.31.10",
+    "level": "critical"
+  },
+  {
+    "timestamp": "2024-04-05T09:22:45Z",
+    "message": "CRITICAL: payment-service container restarted 5 times in 10 mins",
+    "level": "critical"
+  }
+]
